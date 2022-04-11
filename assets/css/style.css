@@ -69,10 +69,8 @@ textarea,
 select {
     font: inherit;
   }
-
-  /*------------
-  SIDEBAR
-  --------------*/
+}
+@media screen and (min-width: 0) {
   .mobile-nav {
     display: flex;
     justify-content: space-between;
@@ -94,7 +92,59 @@ select {
     color: var(--white);
     font-weight: bold;
   }
+}
+@media screen and (min-width: 0) {
+  .second-column {
+    display: grid;
+    justify-items: center;
+  }
+  .second-column .header-items .search {
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    gap: 1rem;
+  }
+  .second-column .header-items .search--bar {
+    border: 1px solid var(--grey-primary-1);
+    border-radius: 10px;
+    background-color: var(--bg-secondary-1);
+    padding-inline: 1rem;
+  }
+  .second-column .header-items .search--bar:focus {
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 0) {
+  .righ-side[data-visible=true] {
+    transform: translateX(0);
+  }
+  .righ-side[data-visible=true] .info-close {
+    position: absolute;
+    top: 0.1rem;
+    left: 1rem;
+    display: block;
+    color: rgb(168, 0, 0);
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+  }
 
+  .righ-side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-secondary-1);
+    transform: translateX(100%);
+    transition: 0.4s;
+  }
+  .righ-side .announcements {
+    background-color: var(--white);
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 0) {
   .sidebar {
     position: fixed;
     top: 0;
@@ -138,62 +188,6 @@ select {
     font-size: 1.4rem;
     background-color: transparent;
     border: none;
-  }
-
-  /*----------
-  INFO SIDEBAR
-  -------------*/
-  .righ-side[data-visible=true] {
-    transform: translateX(0);
-  }
-  .righ-side[data-visible=true] .info-close {
-    position: absolute;
-    top: 0.1rem;
-    left: 1rem;
-    display: block;
-    color: rgb(168, 0, 0);
-    font-weight: bold;
-    font-size: 1.4rem;
-    background-color: transparent;
-    border: none;
-  }
-
-  .righ-side {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--bg-secondary-1);
-    transform: translateX(100%);
-    transition: 0.4s;
-  }
-  .righ-side .announcements {
-    background-color: var(--white);
-    margin: 1rem;
-    margin-top: 2rem;
-  }
-
-  /*----------
-  HEADER ITEMS
-  -------------*/
-  .second-column {
-    display: grid;
-    justify-items: center;
-  }
-  .second-column .header-items .search {
-    display: flex;
-    align-items: center;
-    margin-inline: auto;
-    gap: 1rem;
-  }
-  .second-column .header-items .search--bar {
-    border: 1px solid var(--grey-primary-1);
-    border-radius: 10px;
-    background-color: var(--bg-secondary-1);
-    padding-inline: 1rem;
-  }
-  .second-column .header-items .search--bar:focus {
-    background-color: transparent;
-    border-color: var(--grey-primary-1);
   }
 }
 

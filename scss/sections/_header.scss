@@ -1,0 +1,31 @@
+@use '../custom'as *;
+
+@media screen and (min-width: 0) {
+.second-column {
+  display: grid;
+  justify-items: center;
+
+  .header-items {
+
+    .search {
+      display: flex;
+      align-items: center;
+      margin-inline: auto;
+      gap: 1rem;
+
+      &--bar {
+        border: 1px solid var(--grey-primary-1);
+        border-radius: 10px;
+        background-color: var(--bg-secondary-1);
+        padding-inline: 1rem;
+
+        &:focus {
+          background-color: transparent;
+        }
+      }
+
+
+    }
+  }
+}
+}

@@ -1,0 +1,81 @@
+$primary-background: #1992d4;
+$primary-background-light: #95cbe798;
+$white: #f5f4ee;
+$bg-secondary-1: #e4e2d8;
+$mostaza: #f0b429;
+$grey-primary-1: #646464;
+
+@media screen and (min-width: 0) {
+  /* FONT FAMILY */
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+
+  /*
+  =============== 
+  Global Styles/ Reset
+  ===============
+  */
+  :root {
+    --primary-background: #1992d4;
+    --primary-background-light: #95cbe798;
+    --white: #f5f4ee;
+    --bg-secondary-1: #e4e2d8;
+    --mostaza: #f0b429;
+    --grey-primary-1: #646464;
+  }
+
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4 p,
+  figure,
+  picture {
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  a,
+  li {
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+  }
+
+
+  body {
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* imgs easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* form elements easier to work with */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+}

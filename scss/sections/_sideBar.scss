@@ -1,0 +1,57 @@
+@use '../custom'as *;
+
+@media screen and (min-width: 0) {
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // width: 80%;
+  background-color: var(--primary-background);
+  padding: 2rem;
+  height: 100vh;
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  transform: translateX(-103%);
+  transition: 0.4s;
+
+  h1 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  li {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .second-dash-row {
+    margin-top: 3rem;
+  }
+
+}
+
+
+
+.sidebar[data-visible="true"] {
+  transform: translateX(0);
+  z-index: 2;
+
+  .hamburger-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    color: rgb(168, 0, 0);
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+
+  }
+}
+}

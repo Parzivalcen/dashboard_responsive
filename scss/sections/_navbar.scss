@@ -1,0 +1,26 @@
+@use '../custom' as *;
+@media screen and (min-width: 0) {
+ .mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    .mobile-hamburger {
+      margin: 1rem;
+      font-size: 1.4rem;
+      display: block;
+      color: black;
+      background-color: transparent;
+      border: none;
+    }
+    .mobile-info{
+      margin: 1rem;
+      padding-inline: 0.8rem;
+      border-radius: 10px;
+      border-color: transparent;
+      background: var(--primary-background);
+      color: var(--white);
+      font-weight: bold;
+
+      
+    }
+  }
+}
