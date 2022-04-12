@@ -1,0 +1,40 @@
+@use '../custom'as *;
+
+@media screen and (min-width: 0) {
+.projects-background{
+  background-color: $bg-secondary-1;
+  width: 100vw;
+  h2{
+    padding-top: 1rem;
+    padding-inline: 1rem;
+  }
+  .projects{
+    display: grid;
+    padding-inline: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 30rem)) ;
+    gap: 1rem;
+    justify-content: center;
+    .project-card{
+      position: relative;
+      background-color: white;
+      padding: 1rem;
+      padding-bottom: 2rem;
+      border-radius: 10px;
+      border-left: 1rem solid $mostaza;
+      &:last-child{
+        margin-bottom: 1rem;
+      }
+      .icons{
+        position: absolute;
+        bottom: 2px;
+        right: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1rem);
+        padding: 1rem;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+}

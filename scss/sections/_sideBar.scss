@@ -16,6 +16,7 @@
   box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.4);
   transform: translateX(-103%);
   transition: 0.4s;
+  z-index: 999;
 
   h1 {
     display: flex;
@@ -39,7 +40,7 @@
 
 .sidebar[data-visible="true"] {
   transform: translateX(0);
-  z-index: 2;
+  z-index: 999;
 
   .hamburger-close {
     position: absolute;

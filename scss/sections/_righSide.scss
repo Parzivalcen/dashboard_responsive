@@ -3,6 +3,7 @@
 @media screen and (min-width: 0) {
 .righ-side[data-visible="true"] {
   transform: translateX(0);
+  z-index: 999;
 
   .info-close {
     position: absolute;
@@ -22,14 +23,23 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--bg-secondary-1);
-  transform: translateX(100%);
+  background-color: $bg-secondary-1;
+  transform: translateY(-100%);
   transition: 0.4s;
+  .announcements{
+    h2{
+      margin-top: 2rem;
+      margin-left: 1rem;
+    }
+  }
 
-  .announcements {
-    background-color: var(--white);
+  .announcement-container {
+    background-color: white;
     margin: 1rem;
-    margin-top: 2rem;
+    
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.39);
 
   }
 }
