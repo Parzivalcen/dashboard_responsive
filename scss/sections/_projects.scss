@@ -11,9 +11,10 @@
   .projects{
     display: grid;
     padding-inline: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 30rem)) ;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 25rem)) ;
     gap: 1rem;
     justify-content: center;
+    
     .project-card{
       position: relative;
       background-color: white;

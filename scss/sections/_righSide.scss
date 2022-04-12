@@ -4,7 +4,7 @@
 .righ-side[data-visible="true"] {
   transform: translateX(0);
   z-index: 999;
-
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.41);
   .info-close {
     position: absolute;
     top: 0.1rem;
@@ -37,10 +37,47 @@
     background-color: white;
     margin: 1rem;
     
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 15px;
     box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.39);
 
   }
+  .announcement{
+    padding: 1rem;
+    h4{
+      font-weight: bold;
+    }
+    p{
+      color: $grey-primary-1;
+    }
+    &:nth-child(2){
+      border-top: 1px solid $grey-primary-1;
+    }
+    &:nth-child(3){
+      border-top: 1px solid $grey-primary-1;
+    }
+  }
+  .trendings{
+    h1{
+      margin-left: 1rem;
+    }
+    .trending-container{
+      margin: 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.39);
+    .trending{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 1rem;
+      margin-block: 1rem;
+      .prophile-pic{
+        grid-column: 1/2 ;
+        grid-row: 1/3 ;
+      }
+    }
+  }
+}
 }
 }
