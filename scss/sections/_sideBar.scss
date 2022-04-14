@@ -56,3 +56,12 @@
   }
 }
 }
+@media screen and (min-width: 1300px) {
+  .sidebar{
+    transform: translateX(0);
+    position: relative;
+    .hamburger-close{
+      display: none;
+    }
+  }
+}

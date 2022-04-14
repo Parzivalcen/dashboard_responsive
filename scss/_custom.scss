@@ -79,3 +79,14 @@ $grey-primary-1: #646464;
     font: inherit;
   }
 }
+@media screen and (min-width: 1300px) {
+  .container{
+    grid-template-columns: 20% 80%;
+    display: grid;
+    height: 100vh;
+    row-gap: 1rem;
+    .second-column{
+      // display: 0vh;
+    }
+  }
+}
