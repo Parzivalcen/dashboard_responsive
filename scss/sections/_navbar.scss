@@ -26,26 +26,6 @@
 }
 @media screen and (min-width: 1300px) {
   .mobile-nav {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
     display: none;
-  
-    .mobile-hamburger {
-    display: none;
-    }
-  
-    .mobile-info {
-      position: absolute;
-      top: 0.5rem;
-      right: 0.5rem;
-      margin: 1rem;
-      padding-inline: 0.8rem;
-      border-radius: 10px;
-      border-color: transparent;
-      background: var(--primary-background);
-      color: var(--white);
-      font-weight: bold;
-    }
   }
 }

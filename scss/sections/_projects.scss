@@ -4,6 +4,7 @@
 .projects-background{
   background-color: $bg-secondary-1;
   width: 100vw;
+  height: 100%;
   h2{
     padding-top: 1rem;
     padding-inline: 1rem;
@@ -42,43 +43,26 @@
   .projects-background {
     background-color:$bg-secondary-1;
     width: 100%;
-    height: 80%;
+    height: 100%;
 
     
     h2 {
       padding: 0;
     }
-  
     .projects {
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows:min-content ;
+      grid-template-rows: repeat(auto-fit, 1fr);
       gap: 1rem;
       grid-auto-flow: row;
       padding: 0;
-      
-  
+      height: 97%;
       .project-card {
-        position: relative;
-        background-color: white;
-        padding: 1rem;
-        padding-bottom: 2rem;
-        border-radius: 10px;
-        border-left: 1rem solid $mostaza;
-        max-height: 30vh;
-  
+        margin-bottom: 1rem;
         &:last-child {
-          margin-bottom: 0rem;
+          margin-bottom: 1rem;
         }
-  
-        .icons {
-          position: absolute;
-          bottom: 2px;
-          right: 0;
-          display: grid;
-          grid-template-columns: repeat(3, 1rem);
-          padding: 1rem;
-          gap: 1rem;
+        .icons *{
+          cursor: pointer;
         }
       }
     }

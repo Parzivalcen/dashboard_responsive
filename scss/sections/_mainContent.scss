@@ -1,12 +1,19 @@
 @use '../custom'as *;
+@media screen and (min-width: 0) {
+  
+}
 @media screen and (min-width: 847px) {
+  .main-content {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1300px) {
   .main-content {
     display: grid;
     grid-template-columns: 70% 30%;
-    height: calc(100vh - 10.26rem);
+    height: auto;
     background-color: $bg-secondary-1;
     gap: 1rem;
     padding: 1rem;
-  border: 2px solid limegreen;
   }
 }

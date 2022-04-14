@@ -86,7 +86,9 @@ $grey-primary-1: #646464;
     height: 100vh;
     row-gap: 1rem;
     .second-column{
-      // display: 0vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
     }
   }
 }

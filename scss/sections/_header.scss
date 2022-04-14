@@ -63,9 +63,48 @@
 @media screen and (min-width: 1300px) {
   .second-column{
     display: initial;
-  }
-  .header-items{
-    margin-top: 2rem;
+    .header-items{
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 60% 30%;
+      grid-auto-flow: row;
+      row-gap: 1rem;
+      position: relative;
+      justify-self: center;
+      .search{
+        display: flex;
+        // width: 100%;
+        &--bar{
+          flex: 1;
+        }
+      }
+      .header-name{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+        gap: 1rem;
+      }
+      .user-welcome{
+        align-items: center;
+        line-height: 0.5;
+        max-height: 4rem;
+        
+        p{
+          margin: 0;
+
+        }
+      }
+      .buttons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3rem;
+        justify-content: space-around;
+        gap: 2rem;
+        .button{
+          height: 2rem;
+        }
+      }
+    }
   }
 
 }
